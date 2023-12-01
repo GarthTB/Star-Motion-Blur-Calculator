@@ -55,16 +55,16 @@
     <ApplicationIcon>短曝多叠.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>D24711C7D62AC7BB67C2DF9307B0FDC0EDC39CEA</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>628B63A2EFD85CF54B155F57B78D0554A18A0986</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Star-Motion-Blur-Calculator_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Garth.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>

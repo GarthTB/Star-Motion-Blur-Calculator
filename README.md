@@ -1,0 +1,1 @@
+# Star-Motion-Blur-Calculator

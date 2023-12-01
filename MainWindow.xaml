@@ -25,18 +25,18 @@
         </Grid.RowDefinitions>
         <RadioButton x:Name="RBTime" Grid.Column="1" Content="算时间" Margin="36,8,150,8" Grid.Row="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsChecked="True" Click="RBTime_Click" ToolTip="根据其他四项算出曝光时间"/>
         <RadioButton x:Name="RBLength" Grid.Column="2" Content="算拖线" Margin="42,8,42,8" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="RBLength_Click" ToolTip="根据其他四项算出星点拖线长度"/>
-        <TextBlock Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="镜头焦距" Margin="10,8,10,8" TextAlignment="Center"/>
-        <TextBlock Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" Text="像素尺寸" Margin="10,8,10,8" TextAlignment="Center"/>
-        <TextBlock Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Text="目标赤纬" Margin="10,8,10,8" TextAlignment="Center"/>
-        <TextBlock x:Name="TextBlockFWHM" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="星点半径" Margin="10,8,10,8" TextAlignment="Center"/>
-        <TextBlock Grid.Column="1" Grid.Row="6" TextWrapping="Wrap" Text="曝光时间" Margin="10,8,10,8" TextAlignment="Center"/>
-        <TextBox x:Name="TBFL" Grid.Column="2" Grid.Row="2" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="6,8,18,10" MaxLength="7" InputScope="Number"/>
-        <TextBox x:Name="TBSize" Grid.Column="2" Grid.Row="3" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="6,8,18,10" MaxLength="7" InputScope="Number"/>
-        <TextBox x:Name="TBDec" Grid.Column="2" Grid.Row="4" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="6,8,18,10" MaxLength="7" InputScope="Number"/>
-        <TextBox x:Name="TBFWHM" Grid.Column="2" Grid.Row="5" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="6,8,18,10" MaxLength="7" InputScope="Number"/>
-        <TextBox x:Name="TBTime" Grid.Column="2" Grid.Row="6" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="6,8,18,10" MaxLength="7" InputScope="Number" IsReadOnly="True"/>
-        <Button x:Name="ButtonClear" Grid.Column="2" Content="归零" Margin="6,8,0,20" Grid.Row="7" HorizontalAlignment="Left" Width="58"/>
-        <Button x:Name="ButtonCalculate" Grid.Column="2" Content="计算" Margin="0,8,18,20" Grid.Row="7" IsDefault="True" HorizontalAlignment="Right" Width="58"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="镜头焦距" Margin="10,8,10,8" TextAlignment="Center" ToolTip="单位：mm"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" Text="像素尺寸" Margin="10,8,10,8" TextAlignment="Center" ToolTip="单位：μm"/>
+        <TextBlock Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Text="目标赤纬" Margin="10,8,10,8" TextAlignment="Center" ToolTip="单位：°"/>
+        <TextBlock x:Name="TextBlockFWHM" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="星点半径" Margin="10,8,10,8" TextAlignment="Center" ToolTip="单位：px"/>
+        <TextBlock Grid.Column="1" Grid.Row="6" TextWrapping="Wrap" Text="曝光时间" Margin="10,8,10,8" TextAlignment="Center" ToolTip="单位：s"/>
+        <TextBox x:Name="TBFL" Grid.Column="2" Grid.Row="2" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="6,8,18,10" MaxLength="7" InputScope="Number" ToolTip="单位：mm"/>
+        <TextBox x:Name="TBSize" Grid.Column="2" Grid.Row="3" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="6,8,18,10" MaxLength="7" InputScope="Number" ToolTip="单位：μm"/>
+        <TextBox x:Name="TBDec" Grid.Column="2" Grid.Row="4" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="6,8,18,10" MaxLength="7" InputScope="Number" ToolTip="单位：°"/>
+        <TextBox x:Name="TBFWHM" Grid.Column="2" Grid.Row="5" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="6,8,18,10" MaxLength="7" InputScope="Number" ToolTip="单位：px"/>
+        <TextBox x:Name="TBTime" Grid.Column="2" Grid.Row="6" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="6,8,18,10" MaxLength="7" InputScope="Number" IsReadOnly="True" ToolTip="单位：s" Background="#FFEAEEF0"/>
+        <Button x:Name="ButtonClear" Grid.Column="2" Content="归零" Margin="6,8,0,20" Grid.Row="7" HorizontalAlignment="Left" Width="58" Click="ButtonClear_Click"/>
+        <Button x:Name="ButtonCalculate" Grid.Column="2" Content="计算" Margin="0,8,18,20" Grid.Row="7" IsDefault="True" HorizontalAlignment="Right" Width="58" Click="ButtonCalculate_Click"/>
         <Button x:Name="ButtonAbout" Grid.Column="1" Content="关于" Margin="18,8,0,20" Grid.Row="7" HorizontalAlignment="Left" Width="58" Click="ButtonAbout_Click"/>
     </Grid>
 </Window>
